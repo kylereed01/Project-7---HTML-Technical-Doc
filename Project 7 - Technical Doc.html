@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Document Head -->
+<head>
+    <!-- Character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>HTML Technical Documentation</title>
+    
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <ul>
+                <!-- Navigation links with onclick events to show different content sections -->
+                <li><a href="#intro" onclick="showContent('intro')">Introduction to HTML</a></li>
+                <li><a href="#setup" onclick="showContent('setup')">Basic Structure of an HTML Document</a></li>
+                <li><a href="#usage" onclick="showContent('usage')">Common HTML Elements</a></li>
+                <li><a href="#api" onclick="showContent('api')">Attributes in HTML</a></li>
+                <li><a href="#faq" onclick="showContent('faq')">Conclusion of HTML</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <!-- Introduction Section -->
+            <div id="intro" class="doc-section">
+                <h2>Introduction to HTML</h2>
+                <p>
+                    HTML, or HyperText Markup Language, is the standard markup language used to create web pages. <br><br>
+                    It provides the structure of a webpage by using a variety of elements and tags that define different types of content, such as headings, paragraphs, links, images, and more. <br><br>
+                    HTML is essential for web development and serves as the backbone for all websites. <br><br>
+                </p>
+            </div>
+
+            <!-- Basic Structure Section -->
+            <div id="setup" class="doc-section" style="display: none;">
+                <h2>Basic Structure of an HTML Document</h2>
+                <p>
+                    An HTML document has a specific structure that must be followed: <br><br>
+                    <!-- Using textarea to display HTML tags as text -->
+                    The <textarea> <!DOCTYPE html> </textarea> declaration defines that this document is an HTML5 document. <br><br>
+                    <!-- Additional HTML structure explanations -->
+                    <!-- ... [remaining structure explanations] ... -->
+                </p>
+            </div>
+
+            <!-- Common Elements Section -->
+            <div id="usage" class="doc-section" style="display: none;">
+                <h2>Common HTML Elements</h2>
+                <p>
+                    An HTML element is defined by a start tag, some content, and an end tag. <br><br>
+                    <!-- Examples of HTML elements -->
+                    <!-- ... [element examples] ... -->
+                </p>
+            </div>
+
+            <!-- Attributes Section -->
+            <div id="api" class="doc-section" style="display: none;">
+                <h2>Attributes in HTML</h2>
+                <p>
+                    <!-- HTML attributes explanation -->
+                    All HTML elements can have attributes. <br><br>
+                    <!-- ... [attributes explanation and examples] ... -->
+                </p>
+            </div>
+
+            <!-- Conclusion Section -->
+            <div id="faq" class="doc-section" style="display: none;">
+                <h2>Conclusion of HTML</h2>
+                <p>
+                    HTML forms the foundation of web development by structuring content on webpages. <br><br>
+                    Understanding its basic syntax, common elements, attributes, and semantic usage is crucial for creating effective web pages.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
